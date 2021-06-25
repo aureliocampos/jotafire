@@ -1,25 +1,15 @@
 <?php get_header(); ?>
-  <main id="main" class="site-main">
-
-  <?php
-    if ( have_posts() ) {
-
-      // Load posts loop.
-      while ( have_posts() ) {
-        the_post();
-        get_template_part( 'template-parts/content/content' );
-      }
-
-      // Previous/next page navigation.
-      twentynineteen_the_posts_navigation();
-
-    } else {
-
-      // If no content, include the "No posts found" template.
-      get_template_part( 'template-parts/content/content', 'none' );
-
-    }
-  ?>
-
+  <main id="main-content" class="wrap-content">
+    <section class="banner">
+      <div class="banner__background">
+        <img src="#" alt="" sizes="" srcset="" />
+        <div class="banner__description">
+          <h1 class="banner__title">JOTAFIRE</h1>
+          <p class="banner__subtitle">Sistemas completos para evitar acidentes e riscos à vida.</p>
+          <a href="http://"> Solicite um orçamento</a>
+        </div>
+      </div>
+      <span>Icon</span>
+    </section>
   </main>
 <?php get_footer(); ?>

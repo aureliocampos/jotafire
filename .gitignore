@@ -6,3 +6,5 @@ xmlrpc.php
 wp-content/languages/
 wp-content/upgrade/
 wp-content/themes/twentynineteen/
+
+node_modules
