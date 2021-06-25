@@ -21,7 +21,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-BoldItalic';
   src: url('../../src/font/Roboto-BoldItalic.eot');
   src: url('../../src/font/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
       url('../../src/font/Roboto-BoldItalic.woff2') format('woff2'),
@@ -32,7 +32,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-Bold';
   src: url('../../src/font/Roboto-Bold.eot');
   src: url('../../src/font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
       url('../../src/font/Roboto-Bold.woff2') format('woff2'),
@@ -132,3 +132,15 @@
 }
 
 
+.banner {
+  &__title {
+    font-family: "Roboto-Bold";
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  &__subtitle {
+    font-family: "Roboto-Regular";
+    font-size: 1em;
+  }
+}

@@ -16,13 +16,16 @@
 					<a href="" class="nav__link">Home</a>
 				</li>
 				<li class="nav__item">
-					<a href="" class="nav__link">Home</a>
+					<a href="" class="nav__link">Sobre</a>
 				</li>
 				<li class="nav__item">
-					<a href="" class="nav__link">Home</a>
+					<a href="" class="nav__link">Serviços</a>
 				</li>
 				<li class="nav__item">
-					<a href="" class="nav__link">Home</a>
+					<a href="" class="nav__link">Estudos de Caso</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__link">Contato</a>
 				</li>
 			</ul>
 		</nav>

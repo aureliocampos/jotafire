@@ -1,8 +1,2 @@
-@import './partials/reset';
-@import './partials/normalize';
-@import './modules/typography';
-
-
-h1 {
-  font-family: 'Roboto-Regular';
-}
+@import './partials/base';
+@import './modules/modules';
