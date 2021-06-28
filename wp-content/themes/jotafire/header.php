@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
 	<header id="header">
 		<figure class="header__logo">
-		<img src="<?php echo get_template_directory_uri()."/src/images/logo-jotafire_2x.png"?>" alt="<?php bloginfo('description'); ?>" class="hedaer__header-image">
+		<img src="<?php echo get_template_directory_uri()."/src/images/logo-jotafire_2x.png"?>" alt="<?php bloginfo('description'); ?>" class="header__logo-image">
 		</figure>
 		<nav class="nav">
 			<ul class="nav__items">

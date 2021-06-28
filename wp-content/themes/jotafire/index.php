@@ -11,5 +11,44 @@
       </div>
       <span>Icon</span>
     </section>
+
+    <section class="section icons__section container">
+      <ul class="icons__items">
+        <li class="icons__item">
+          <img src="<?php echo get_template_directory_uri()."/src/images/icon-profissionais.png"?>" alt="" sizes="" srcset="" class="icons__image">
+          <h3 class="icons__title">Profissionais Capacitados</h3>
+        </li>
+        <li class="icons__item">
+          <img src="<?php echo get_template_directory_uri()."/src/images/icon-24hs.png"?>" alt="" sizes="" srcset="" class="icons__image">
+          <h3 class="icons__title">Atendimento 24h</h3>
+        </li>
+        <li class="icons__item">
+          <img src="<?php echo get_template_directory_uri()."/src/images/icon-sistemas.png"?>" alt="" sizes="" srcset="" class="icons__image">
+          <h3 class="icons__title">Sistemas modernos</h3>
+        </li>
+        <li class="icons__item">
+          <img src="<?php echo get_template_directory_uri()."/src/images/icon-legalizacao.png"?>" alt="" sizes="" srcset="" class="icons__image">
+          <h3 class="icons__title">Legalização perante órgãos regulatórios</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section services__section">
+      <div class="container">
+        <ul class="services__items services__slide">
+          <li class="services__item">
+            <article class="services__article">
+              <figure class="services__figure">
+                <img src="<?php echo get_template_directory_uri()."/src/images/placeholder-destaque_2x.png"?>" alt="" sizes="" srcset="" class="services__image">
+              </figure>
+              <h2 class="services__title">Sistema Sprinkler</h2>
+              <p class="services__excerpt">Rápida detecção e eficincia comprovada contra incêndio.</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 <?php get_footer(); ?>
+
+

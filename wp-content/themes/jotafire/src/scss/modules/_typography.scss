@@ -134,6 +134,17 @@
 $primary-bold:"Roboto-Bold";
 $primary-medium: "Roboto-Medium";
 $primary-regular: "Roboto-Regular";
+$primary-light: "Roboto-Light";
+
+
+/* Line-height */ 
+$larger: 148%;
+$medium: 120%;
+
+
+
+/* Spacing */ 
+$padding-mobile: 1.5rem;
 
 /* Banner Titles */
 .banner {
@@ -144,7 +155,7 @@ $primary-regular: "Roboto-Regular";
     margin: 0;
   }
   &__subtitle--primary{
-    font-family: "Roboto-Regular";
+    font-family: $primary-light;
     font-size: 1.125em;
     line-height: 148%;
   }
