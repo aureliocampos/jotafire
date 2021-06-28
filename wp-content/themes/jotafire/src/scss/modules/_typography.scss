@@ -131,16 +131,96 @@
   font-display: swap;
 }
 
+$primary-bold:"Roboto-Bold";
+$primary-medium: "Roboto-Medium";
+$primary-regular: "Roboto-Regular";
 
+/* Banner Titles */
 .banner {
-  &__title {
+  &__title--primary {
     font-family: "Roboto-Bold";
-    font-size: 4em;
+    font-size: 2.5em;
+    line-height: 120%;
     margin: 0;
-    margin-bottom: 1em;
   }
-  &__subtitle {
+  &__subtitle--primary{
     font-family: "Roboto-Regular";
-    font-size: 1em;
+    font-size: 1.125em;
+    line-height: 148%;
   }
+  &__title--secondary{
+    font-family: "Roboto-Bold";
+    font-size: 2em;
+    line-height: 120%;
+    margin: 0;
+  }
+  &__subtitle--secondary{
+    font-family: "Roboto-Light";
+    font-size: 2em;
+    line-height: 120%;
+  }
+  @include tablet-landscape {
+    &__title--primary {
+      font-size: 4em;
+    }
+    &__subtitle--primary {
+      font-size: 1.5em;
+    }
+    &__title--secondary {
+      font-size: 3.125em;
+    }
+    &__subtitle--secondary {
+      font-size: 3.125em;
+    }
+  }
+}
+
+/* Section Titles */
+.section {
+  &__title--primary {
+    font-family: "Roboto-Regular";
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 120%;
+  }
+  &__subtitle--primary{
+    font-family: "Roboto-Light";
+    font-size: 2.25em;
+    line-height: 148%;
+  }
+  &__title--secondary {
+    font-family: "Roboto-Regular";
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 120%;
+  }
+  &__text--primary {
+    font-family: "Roboto-Regular";
+    font-size: 1.125em;
+    line-height: 148%;
+  }
+}
+
+/* Card Titles */
+.card {
+  &__title--primary{
+    font-family: "Roboto-Bold";
+    font-size: 1.5em;
+    line-height: 120%;
+  }
+  &__title--secondary{
+    font-family: "Roboto-Light";
+    font-size: 1.5em;
+    line-height: 120%;
+  }
+  &__excerpt--primary{
+    font-family: "Roboto-Regular";
+    font-size: 1.125em;
+    line-height: 148%;
+  }
+}
+
+strong {
+  font-family: "Roboto-Bold";
 }
