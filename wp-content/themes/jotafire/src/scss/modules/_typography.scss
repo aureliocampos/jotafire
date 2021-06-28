@@ -189,27 +189,52 @@ $padding-mobile: 1.5rem;
 /* Section Titles */
 .section {
   &__title--primary {
-    font-family: "Roboto-Regular";
-    font-size: 3em;
+    font-family: "Roboto-Light";
+    font-size: 2em;
+    color: currentColor;
     text-transform: uppercase;
     line-height: 120%;
+
+    /* Escope */
+    strong {
+      font-family: $primary-regular;
+      color: $red-medium;
+      text-decoration: underline;
+    }
   }
   &__subtitle--primary{
     font-family: "Roboto-Light";
-    font-size: 2.25em;
+    font-size: 1em;
+    color: currentColor;
     line-height: 148%;
+    margin: 0.5rem 0 2rem 0;
   }
   &__title--secondary {
-    font-family: "Roboto-Regular";
-    font-size: 3em;
+    font-family: "Roboto-bold";
+    font-size: 2em;
     text-align: center;
     text-transform: uppercase;
     line-height: 120%;
   }
   &__text--primary {
     font-family: "Roboto-Regular";
-    font-size: 1.125em;
+    font-size: 1em;
     line-height: 148%;
+  }
+
+  @include tablet-landscape {
+    &__title--primary {
+      font-size: 3em;
+    }
+    &__subtitle--primary {
+      font-size: 1.25em;
+    }
+    &__title--secondary {
+      font-size: 2em;
+    }
+    &__subtitle--secondary {
+      font-size: 1.125em;
+    }
   }
 }
 
