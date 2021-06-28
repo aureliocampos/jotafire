@@ -85,8 +85,6 @@
       </div>
     </section>
 
-    <hr style="width: 75%;opacity: 0.25;position: relative;top: 30px;">
-
     <section class="section interleaved-card__section">
       <div class="container">
         <h2 class="section__title--primary">MANUTENÇÃO <strong>PREVENTIVA & CORRETIVA</strong></h2>

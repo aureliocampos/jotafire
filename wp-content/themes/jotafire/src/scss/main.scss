@@ -59,7 +59,7 @@ a{
   }
 }
 .slick-dots {
-  bottom: -65px;
+  bottom: -35px;
 }
 .slick-dots li button:before {
   font-size: 8px;
@@ -132,6 +132,8 @@ a{
 .services {
   &__section {
     color: $black;
+    position: relative;
+    overflow: hidden;
   }
   &__items {}
   &__item {}
@@ -230,12 +232,13 @@ a{
       @include tablet {
         background-color: #801124;
         margin: 0 -1.5rem;
+        .interleaved-card__card {
+          flex-direction: row-reverse;
+          margin: 2rem auto;
+          padding: 2rem 0;
+        }
       }
-      .interleaved-card__card {
-        flex-direction: row-reverse;
-        margin: 2rem auto;
-        padding: 2rem 0;
-      }
+      
       .interleaved-card__description {
         background-color: $red-dark;
       }
