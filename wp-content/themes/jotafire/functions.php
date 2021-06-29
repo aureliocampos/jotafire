@@ -22,3 +22,6 @@ function load_scripts($hook) {
  wp_enqueue_style ( 'slick-theme' );
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
+
+
+add_theme_support( 'title-tag' );

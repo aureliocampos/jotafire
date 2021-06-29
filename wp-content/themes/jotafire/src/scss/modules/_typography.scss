@@ -235,6 +235,11 @@ $padding-mobile: 1.5rem;
     &__subtitle--secondary {
       font-size: 1.125em;
     }
+    &__text--primary {
+      font-family: "Roboto-Regular";
+      font-size: 1.25em;
+      line-height: 148%;
+    }
   }
 }
 

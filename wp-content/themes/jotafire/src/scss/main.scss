@@ -10,10 +10,19 @@
 }
 .container {
   padding: 0 1.5rem;
+  @include notebook {
+    max-width: 1114px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
-$margin-mobile : 6em 0;
 .section {
-  margin: $margin-mobile;
+  margin-top: 6em;
+  margin-bottom: 6em;
+  @include notebook {
+    margin-top: 12em;
+    margin-bottom: 12em;
+  }
   &__cta {
     display: flex;
     justify-content: center;
@@ -96,9 +105,17 @@ a{
       display: inline-flex;
     }
   }
+  @include notebook {
+    height: 65vh;
+  }
 }
 .icons {
-  &__section {}
+  &__section {
+    @include notebook {
+      margin-top: 6em;
+      margin-bottom: 6em;
+    }
+  }
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -110,16 +127,26 @@ a{
       margin: 0 auto;
       gap: 1rem;
     }
+    @include notebook {
+      justify-content: space-around;
+      gap: 0;
+    }
   }
   &__item {
     text-align: center;
     width: 150px;
     height: auto;
+    @include notebook {
+      width: 25%;
+    }
   }
   &__image {
     width: 80px;
     height: auto;
     overflow: hidden;
+    @include notebook {
+      width: 100px;
+    }
   }
   &__title {
     font-family: $primary-bold;
@@ -127,6 +154,9 @@ a{
     color: $red-medium;
     line-height: $larger;
     margin-top: 0.75rem;
+    @include notebook {
+      font-size: 1.125em;
+    }
   }
 }
 .services {
@@ -174,6 +204,7 @@ a{
 /* Card Manutenção */
 .interleaved-card {
   &__section {
+    overflow: hidden;
     .section__title--primary {
       strong {
         text-decoration: none;
@@ -190,10 +221,18 @@ a{
       margin: 0 auto;
       padding: 0;
     }
+    @include notebook {
+      max-width: 100%;
+      margin: 0;
+      padding: 2rem 0;
+    }
   }
   &__figure {
     @include tablet {
       width: 320px;
+    }
+    @include notebook {
+      width: 540px;
     }
   }
   &__description {
@@ -203,12 +242,19 @@ a{
       font-size: 14px;
       padding: 0;
     }
+    @include notebook {
+      width: 50%;
+      font-size: 16px;
+    }
   }
   &__title {
     font-family: $primary-bold;
     color: $black;
     font-size: 1.25em;
     margin: 0.6em 0 0.3em 0;
+    @include notebook {
+      font-size: 2em;
+    }
   }
   &__subtitle {
     font-family: 'Roboto-Regular';
@@ -230,12 +276,38 @@ a{
     }
     &:nth-of-type(2n) {
       @include tablet {
-        background-color: #801124;
+        background-color: $red-dark;
         margin: 0 -1.5rem;
         .interleaved-card__card {
           flex-direction: row-reverse;
           margin: 2rem auto;
-          padding: 2rem 0;
+        }
+      }
+      @include notebook {
+        position: relative;
+        margin: 0;
+        &:before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: $red-dark;
+          position: absolute;
+          top: 0;
+          right: 50rem;
+          z-index: -1;
+        }
+        &:after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: $red-dark;
+          position: absolute;
+          top: 0;
+          left: 50rem;
+          z-index: -1;
+        }
+        .interleaved-card__card {
+          padding: 4rem 0;
         }
       }
       
@@ -261,6 +333,9 @@ a{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
+    }
+    @include notebook {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   &__item {
@@ -312,6 +387,15 @@ a{
   &__item {
     max-width: 150px;
   }
+}
+
+
+/* Quem somos */
+.content-columns__two {
+  column-count: 2;
+  max-width: 960px;
+  margin: 2rem auto 0 auto;
+  gap: 50px;
 }
 
 /* Footer */
@@ -377,3 +461,4 @@ a{
     }
   }
 }
+
