@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+
 module.exports = {
   entry: './src/js/main.js',
   mode: 'development',
@@ -31,9 +32,13 @@ module.exports = {
           },
         ],
       },
-            {
+      {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+      },
+      { 
+        test: /\.css$/, 
+        use: 'css-loader' 
       },
     ],
   },
