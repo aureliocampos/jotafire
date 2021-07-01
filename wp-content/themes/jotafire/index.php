@@ -1,8 +1,11 @@
 <?php get_header(); ?>
   <main id="main-content" class="wrap-content">
 
+
+  <?php the_content(); ?>
+  
   <!-- Página principal -->
-    <?php get_template_part('pages/home'); ?>
+    <!-- <?php get_template_part('pages/home'); ?> -->
 
 
   <!-- Página Sobre -->

@@ -1,6 +1,8 @@
 jQuery('.services__slide').slick({
   dots: true,
   infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 3,
   speed: 300,
   responsive: [
     {
