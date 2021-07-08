@@ -1,47 +1,7 @@
 @import './partials/base';
 @import './modules/modules';
+@import './components/components';
 
-* {
-  box-sizing: border-box;
-}
-
-#header {
-  display: none;
-}
-.container {
-  padding: 0 1.5rem;
-  @include notebook {
-    max-width: 1114px;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-.section {
-  margin-top: 6em;
-  margin-bottom: 6em;
-  @include notebook {
-    margin-top: 12em;
-    margin-bottom: 12em;
-  }
-  &__cta {
-    display: flex;
-    justify-content: center;
-  }
-}
-.embed-responsive {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-a{
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-  &:focus {
-    text-decoration: none;
-  }
-}
 
 /* Buttons */
 .button__primary {
@@ -76,6 +36,8 @@ a{
 .slick-dots li.slick-active button:before {
   color: $red-medium;
 }
+
+
 
 /* Banner */
 .banner__primary {

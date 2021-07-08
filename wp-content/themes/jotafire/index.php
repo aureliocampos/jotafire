@@ -2,11 +2,13 @@
   <main id="main-content" class="wrap-content">
 
 
-  <?php the_content(); ?>
+  <!-- <?php the_content(); ?> -->
   
   <!-- Página principal -->
-    <!-- <?php get_template_part('pages/home'); ?> -->
+    <?php get_template_part('pages/home'); ?>
 
+  <!-- Página Serviços -->
+    <!-- <?php get_template_part('pages/services'); ?> -->
 
   <!-- Página Sobre -->
     <!-- <?php get_template_part('pages/about'); ?> -->
@@ -19,3 +21,4 @@
 
   </main>
 <?php get_footer(); ?>
+
