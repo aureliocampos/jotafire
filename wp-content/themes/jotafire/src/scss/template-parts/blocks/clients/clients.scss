@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 2rem;
     margin-top: 2rem;
     @include tablet {
       max-width: 720px;
@@ -16,7 +16,10 @@
     }
   }
   &__item {
-    max-width: 150px;
+    max-width: 100px;
+    @include tablet {
+      max-width: 150px;
+    }
   }
 }
 

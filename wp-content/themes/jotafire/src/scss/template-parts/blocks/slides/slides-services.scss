@@ -27,10 +27,17 @@
 .card-primary {
   &__article {
     min-height: 380px;
-    color: $black;
+    color: $white;
     padding: 0 1rem 2rem 1rem;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 8px;
+    background-color: $red-dark;
+    transition: 300ms;
+    &:hover {
+      box-shadow: 0px 5px 20px 0px rgba(85, 85, 85, 0.3);
+      transform: scale(0.95);
+      transition: 300ms;
+    }
   }
   &__figure {
     max-height: 225px;

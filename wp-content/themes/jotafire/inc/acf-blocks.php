@@ -23,6 +23,7 @@ function acf_init_block_types() {
   if( function_exists('acf_register_block_type') ) {
 
 
+    // Main Primário
     acf_register_block_type(array(
         'name'              => 'main-primary',
         'title'             => __('Banner Primário'),
@@ -33,6 +34,19 @@ function acf_init_block_types() {
         'align'             => 'full',
         'keywords'          => array( 'Banner', 'main' ),
         'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/blocks/main/main-primary.css',
+    ));
+
+    // Main de conteúdo com duas colunas
+    acf_register_block_type(array(
+      'name'              => 'main-content-two-columns',
+      'title'             => __('Seção com duas colunas - Conteúdo'),
+      'description'       => __(''),
+      'render_template'   => 'template-parts/blocks/main/main-content.php',
+      'category'          => 'jotafire-blocks',
+      'icon'              => 'admin-comments',
+      'align'             => 'full',
+      'keywords'          => array( 'Cards' ),
+      'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/blocks/main/main-content.css',
     ));
 
     acf_register_block_type(array(
@@ -84,6 +98,32 @@ function acf_init_block_types() {
       'align'             => 'full',
       'keywords'          => array( 'Cards' ),
       'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/blocks/cards/content-card.css',
+    ));
+
+    // Seção de cards Horizontais (Cards de Serviço)
+    acf_register_block_type(array(
+      'name'              => 'horizontal-card',
+      'title'             => __('Cards de serviço Horizontais'),
+      'description'       => __(''),
+      'render_template'   => 'template-parts/blocks/cards/horizontal-card.php',
+      'category'          => 'jotafire-blocks',
+      'icon'              => 'admin-comments',
+      'align'             => 'full',
+      'keywords'          => array( 'Cards' ),
+      'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/blocks/cards/horizontal-card.css',
+    ));
+
+    // Seção de cards de Projetos)
+    acf_register_block_type(array(
+      'name'              => 'projects-card',
+      'title'             => __('Cards de Projetos'),
+      'description'       => __(''),
+      'render_template'   => 'template-parts/blocks/cards/projects-card.php',
+      'category'          => 'jotafire-blocks',
+      'icon'              => 'admin-comments',
+      'align'             => 'full',
+      'keywords'          => array( 'Cards' ),
+      'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/blocks/cards/projects-card.css',
     ));
 
      // Seção de clientes 

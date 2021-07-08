@@ -10,10 +10,12 @@
 
 
 .icons {
-  &__section {
+  &__section.section {
+    @include tablet {
+      margin: 0 auto;
+    }
     @include notebook {
-      margin-top: 6em;
-      margin-bottom: 6em;
+      margin: 3rem auto 0 auto;
     }
   }
   &__items {

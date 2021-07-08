@@ -6,7 +6,7 @@
   right: 0;
   z-index: 9;
   background-color: $red-dark;
- &__container {
+  &__container {
   position: relative;
   @include tablet {
     display: flex;
@@ -15,7 +15,8 @@
     max-width: 1114px;
     margin: 0 auto;
   }
- }
+  }
+
 }
 .header__responsive {
   display: flex;
@@ -23,6 +24,9 @@
   align-items: center;
   height: 60px;
   padding: 0 1.25rem;
+  @include notebook {
+    padding: 0%;
+  }
   small {
     width: 60%;
   }
@@ -67,10 +71,14 @@
   padding: 1.25rem;
   background-color: $red-dark;
   border-bottom: 1px solid $white;
+  padding-bottom: 0;
   @include tablet {
     position: initial;
     height: auto;
     border: none;
+  }
+  @include notebook {
+    padding: 1.25rem 0;
   }
 }
 .header__content.active {
@@ -91,6 +99,9 @@
     margin: 0.3125rem 0;
     border-bottom: 1px solid rgba(208, 208, 208, 0.1);
     @include tablet {
+      border: none;
+    }
+    &:last-of-type {
       border: none;
     }
     a {
@@ -115,6 +126,66 @@
         border-right: none;
         border-left: none;
         text-decoration: none;
+      }
+    }
+  }
+}
+
+/*Subheader de contato */
+.desktop__subheader {
+  display: none;
+  @include notebook {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #1f1f1f;
+  }
+  .header__subheader-infos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    width: 1114px;
+    margin: 0 auto;
+    .header__subheader-text {
+      font-family: $primary-light;
+      color: $white;
+    } 
+    .header__phones {
+      display: flex;
+      gap: 1rem;
+      .header__phone-links {
+        font-family: $primary-regular;
+        font-size: 1em;
+        color: $yellow-medium;
+      }
+    }
+  }
+}
+.mobile__subheader {
+  padding: 0.5rem 1.5rem;
+  margin: 2em -1.5em 0 -1.5em;
+  background-color: #1f1f1f;
+  @include notebook {
+    display: none;
+  }
+  .header__subheader-infos {
+    display: flex;
+    gap: 1em;
+    margin: 1em 0;
+    flex-wrap: wrap;
+    .header__subheader-text {
+      font-family: $primary-light;
+      color: $white;
+    } 
+    .header__phones {
+      display: flex;
+      gap: 1rem;
+      .header__phone-links {
+        font-family: $primary-regular;
+        font-size: 0.825em;
+        color: $yellow-medium;
       }
     }
   }
