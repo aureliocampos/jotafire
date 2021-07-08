@@ -1,0 +1,34 @@
+@import '../../../modules/modules';
+
+/* Banner */
+.banner__primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $red-dark;
+  color: $white;
+  .banner__title--primary {
+    color: currentColor;
+  }
+  .banner__subtitle--primary {
+    color: currentColor;
+    margin: 1em 0 1.5em 0;
+  }
+  @include tablet {
+    height: 50vh;
+    .banner__description {
+      max-width: 1114px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .button__primary {
+      display: inline-flex;
+    }
+  }
+  @include notebook {
+    height: 65vh;
+  }
+}

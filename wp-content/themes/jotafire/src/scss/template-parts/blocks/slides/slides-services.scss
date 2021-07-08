@@ -1,0 +1,59 @@
+@import '../../../modules/modules';
+
+.services {
+  &__section {
+    color: $black;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 6em;
+  }
+  &__items {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      max-width: 1114px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding-bottom: 6em;
+      .slick-dots {
+        bottom: 0;
+      } 
+    }
+  }
+}
+
+/* CARDS */
+.card-primary {
+  &__article {
+    min-height: 380px;
+    color: $black;
+    padding: 0 1rem 2rem 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  &__figure {
+    max-height: 225px;
+    overflow: hidden;
+    margin: 0 -1rem;
+  }
+  &__image {
+    width: -webkit-fill-available;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  &__title {
+    font-family: "Roboto-Bold";
+    font-size: 1.25em;
+    color: currentColor;
+    line-height: 120%;
+    margin-top: 2rem;
+  }
+  &__excerpt {
+    font-family: "Roboto-Regular";
+    font-size: 1em;
+    color: currentColor;
+    line-height: 148%;
+    margin-top: 1rem;
+  }
+}

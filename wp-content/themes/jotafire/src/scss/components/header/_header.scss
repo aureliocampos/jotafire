@@ -89,7 +89,7 @@
   }
   .menu-item {
     margin: 0.3125rem 0;
-    border-bottom: 1px solid rgb(208 208 208 / 10%);
+    border-bottom: 1px solid rgba(208, 208, 208, 0.1);
     @include tablet {
       border: none;
     }

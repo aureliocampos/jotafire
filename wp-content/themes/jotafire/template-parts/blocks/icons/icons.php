@@ -1,20 +1,17 @@
 <section class="section icons__section container">
-  <ul class="icons__items">
-    <li class="icons__item">
-      <img loading="lazy" src="<?php echo get_template_directory_uri()."/src/images/icon-profissionais.png"?>" alt="" sizes="" srcset="" class="icons__image">
-      <h3 class="icons__title">Profissionais Capacitados</h3>
-    </li>
-    <li class="icons__item">
-      <img loading="lazy" src="<?php echo get_template_directory_uri()."/src/images/icon-24hs.png"?>" alt="" sizes="" srcset="" class="icons__image">
-      <h3 class="icons__title">Atendimento 24h</h3>
-    </li>
-    <li class="icons__item">
-      <img loading="lazy" src="<?php echo get_template_directory_uri()."/src/images/icon-sistemas.png"?>" alt="" sizes="" srcset="" class="icons__image">
-      <h3 class="icons__title">Sistemas modernos</h3>
-    </li>
-    <li class="icons__item">
-      <img loading="lazy" src="<?php echo get_template_directory_uri()."/src/images/icon-legalizacao.png"?>" alt="" sizes="" srcset="" class="icons__image">
-      <h3 class="icons__title">Legalização perante órgãos regulatórios</h3>
-    </li>
-  </ul>
+  <?php if( have_rows('module_icon_text') ): ?>
+    <ul class="icons__items">
+      <?php while( have_rows('module_icon_text') ): the_row(); ?>
+          <li class="icons__item">
+            <?php 
+              $image = get_sub_field('icon');
+              if( !empty( $image ) ): ?>
+                <img loading="lazy" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="icons__image" />
+              <?php endif; ?>
+            <h3 class="icons__title"><?php the_sub_field('text'); ?></h3>
+
+          </li>
+      <?php endwhile; ?>
+    </ul>
+  <?php endif; ?>
 </section>

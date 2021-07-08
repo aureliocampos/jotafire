@@ -1,0 +1,18 @@
+
+/* Buttons */
+.button__primary {
+  display: block;
+  width: max-content;
+  height: auto;
+  
+  font-family: $primary-bold;
+  font-size: 0.75em;
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  padding: 1rem 2rem;
+  background-color: $yellow-light;
+  border-radius: 0.375rem;
+  box-shadow: 0px 8px 20px 0px rgba(30, 31, 38, 0.1);
+}

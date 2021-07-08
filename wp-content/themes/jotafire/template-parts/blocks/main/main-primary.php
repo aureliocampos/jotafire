@@ -2,9 +2,18 @@
   <div class=" container banner__container banner__background">
     <img src="#" alt="" sizes="" srcset="" />
     <div class="banner__description">
-      <h1 class="banner__title--primary">Nossa missão é a sua segurança</h1>
-      <p class="banner__subtitle--primary">A Jotafire possui um time de profissionais especializados em sistemas de segurança e combate a incêndio,para que você tenha total segurança sem correr riscos de acidentes e com todo apoio da nossa equipe técnica para proteger o seu negócio,empresa ou condomínio.</p>
-      <a href="http://" class="button__primary"> Solicite um orçamento</a>
+      <h1 class="banner__title--primary"><?php the_field('titulo'); ?></h1>
+      <div class="banner__subtitle--primary"><?php the_field('texto'); ?></div>
+      <?php 
+        $link = get_field('botao');
+        if( $link ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+            <a class="button__primary" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+      <?php endif; ?>
+
     </div>
   </div>
 </section>
