@@ -1,65 +1,139 @@
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('./font/Roboto-Black.eot');
+  src: url('./font/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-Black.woff2') format('woff2'),
+      url('./font/Roboto-Black.woff') format('woff'),
+      url('./font/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-BlackItalic';
+  src: url('./font/Roboto-BlackItalic.eot');
+  src: url('./font/Roboto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-BlackItalic.woff2') format('woff2'),
+      url('./font/Roboto-BlackItalic.woff') format('woff'),
+      url('./font/Roboto-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-BoldItalic';
+  src: url('./font/Roboto-BoldItalic.eot');
+  src: url('./font/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-BoldItalic.woff2') format('woff2'),
+      url('./font/Roboto-BoldItalic.woff') format('woff'),
+      url('./font/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('./font/Roboto-Bold.eot');
+  src: url('./font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-Bold.woff2') format('woff2'),
+      url('./font/Roboto-Bold.woff') format('woff'),
+      url('./font/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Italic';
+  src: url('./font/Roboto-Italic.eot');
+  src: url('./font/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-Italic.woff2') format('woff2'),
+      url('./font/Roboto-Italic.woff') format('woff'),
+      url('./font/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('./font/Roboto-Light.eot');
+  src: url('./font/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-Light.woff2') format('woff2'),
+      url('./font/Roboto-Light.woff') format('woff'),
+      url('./font/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('./font/Roboto-Medium.eot');
+  src: url('./font/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-Medium.woff2') format('woff2'),
+      url('./font/Roboto-Medium.woff') format('woff'),
+      url('./font/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-MediumItalic';
+  src: url('./font/Roboto-MediumItalic.eot');
+  src: url('./font/Roboto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-MediumItalic.woff2') format('woff2'),
+      url('./font/Roboto-MediumItalic.woff') format('woff'),
+      url('./font/Roboto-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-LightItalic';
+  src: url('./font/Roboto-LightItalic.eot');
+  src: url('./font/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-LightItalic.woff2') format('woff2'),
+      url('./font/Roboto-LightItalic.woff') format('woff'),
+      url('./font/Roboto-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url('./font/Roboto-Thin.eot');
+  src: url('./font/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-Thin.woff2') format('woff2'),
+      url('./font/Roboto-Thin.woff') format('woff'),
+      url('./font/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-ThinItalic';
+  src: url('./font/Roboto-ThinItalic.eot');
+  src: url('./font/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-ThinItalic.woff2') format('woff2'),
+      url('./font/Roboto-ThinItalic.woff') format('woff'),
+      url('./font/Roboto-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('./font/Roboto-Regular.eot');
+  src: url('./font/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./font/Roboto-Regular.woff2') format('woff2'),
+      url('./font/Roboto-Regular.woff') format('woff'),
+      url('./font/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import './partials/base';
 @import './modules/modules';
-
-* {
-  box-sizing: border-box;
-}
-
-#header {
-  display: none;
-}
-.container {
-  padding: 0 1.5rem;
-  @include notebook {
-    max-width: 1114px;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-.section {
-  margin-top: 6em;
-  margin-bottom: 6em;
-  @include notebook {
-    margin-top: 12em;
-    margin-bottom: 12em;
-  }
-  &__cta {
-    display: flex;
-    justify-content: center;
-  }
-}
-.embed-responsive {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-a{
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-  &:focus {
-    text-decoration: none;
-  }
-}
-
-/* Buttons */
-.button__primary {
-  display: block;
-  width: max-content;
-  height: auto;
-  
-  font-family: $primary-bold;
-  font-size: 0.75em;
-  color: $black;
-  text-decoration: none;
-  text-transform: uppercase;
-  
-  padding: 1rem 2rem;
-  background-color: $yellow-light;
-  border-radius: 0.375rem;
-  box-shadow: 0px 8px 20px 0px rgb(30 31 38 / 10%);
-}
+@import './components/components';
 
 /* Slick */
 @include tablet {
@@ -76,389 +150,3 @@ a{
 .slick-dots li.slick-active button:before {
   color: $red-medium;
 }
-
-/* Banner */
-.banner__primary {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: $red-dark;
-  color: $white;
-  .banner__title--primary {
-    color: currentColor;
-  }
-  .banner__subtitle--primary {
-    color: currentColor;
-    margin: 1em 0 1.5em 0;
-  }
-  @include tablet {
-    height: 50vh;
-    .banner__description {
-      max-width: 1114px;
-      text-align: center;
-      margin: 0 auto;
-    }
-    .button__primary {
-      display: inline-flex;
-    }
-  }
-  @include notebook {
-    height: 65vh;
-  }
-}
-.icons {
-  &__section {
-    @include notebook {
-      margin-top: 6em;
-      margin-bottom: 6em;
-    }
-  }
-  &__items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 0.625rem;
-    @include tablet {
-      display: flex;
-      justify-content: center;
-      max-width: 1114px;
-      margin: 0 auto;
-      gap: 1rem;
-    }
-    @include notebook {
-      justify-content: space-around;
-      gap: 0;
-    }
-  }
-  &__item {
-    text-align: center;
-    width: 150px;
-    height: auto;
-    @include notebook {
-      width: 25%;
-    }
-  }
-  &__image {
-    width: 80px;
-    height: auto;
-    overflow: hidden;
-    @include notebook {
-      width: 100px;
-    }
-  }
-  &__title {
-    font-family: $primary-bold;
-    font-size: 0.875em;
-    color: $red-medium;
-    line-height: $larger;
-    margin-top: 0.75rem;
-    @include notebook {
-      font-size: 1.125em;
-    }
-  }
-}
-.services {
-  &__section {
-    color: $black;
-    position: relative;
-    overflow: hidden;
-  }
-  &__items {}
-  &__item {}
-}
-
-/* CARDS */
-.card-primary {
-  &__article {
-    color: $black;
-    padding: 0 1rem 2rem 1rem;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 8px;
-  }
-  &__figure {
-    margin: 0 -1rem;
-  }
-  &__image {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 8px 8px 0 0;
-  }
-  &__title {
-    font-family: "Roboto-Bold";
-    font-size: 1.25em;
-    color: currentColor;
-    line-height: 120%;
-    margin-top: 2rem;
-  }
-  &__excerpt {
-    font-family: "Roboto-Regular";
-    font-size: 1em;
-    color: currentColor;
-    line-height: 148%;
-    margin-top: 1rem;
-  }
-}
-/* Card Manutenção */
-.interleaved-card {
-  &__section {
-    overflow: hidden;
-    .section__title--primary {
-      strong {
-        text-decoration: none;
-      }
-    }
-  }
-  &__card {
-    margin: 0 -1.5em;
-    @include tablet {
-      display: flex;
-      justify-content: center;
-      gap: 0 2rem;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 0;
-    }
-    @include notebook {
-      max-width: 100%;
-      margin: 0;
-      padding: 2rem 0;
-    }
-  }
-  &__figure {
-    @include tablet {
-      width: 320px;
-    }
-    @include notebook {
-      width: 540px;
-    }
-  }
-  &__description {
-    padding: 1em 1.5em 2em 1.5em;
-    @include tablet {
-      width: 350px;
-      font-size: 14px;
-      padding: 0;
-    }
-    @include notebook {
-      width: 50%;
-      font-size: 16px;
-    }
-  }
-  &__title {
-    font-family: $primary-bold;
-    color: $black;
-    font-size: 1.25em;
-    margin: 0.6em 0 0.3em 0;
-    @include notebook {
-      font-size: 2em;
-    }
-  }
-  &__subtitle {
-    font-family: 'Roboto-Regular';
-    color: $black;
-    font-size: 0.875em;
-  }
-  &__text {
-    font-family: 'Roboto-Regular';
-    font-size: 1em;
-    color: $black;
-    margin: 1em 0;
-    line-height: 148%;
-  }
-
-  &__item {
-    margin-top: 2rem;
-    &:first-of-type {
-      margin-top: 0;
-    }
-    &:nth-of-type(2n) {
-      @include tablet {
-        background-color: $red-dark;
-        margin: 0 -1.5rem;
-        .interleaved-card__card {
-          flex-direction: row-reverse;
-          margin: 2rem auto;
-        }
-      }
-      @include notebook {
-        position: relative;
-        margin: 0;
-        &:before {
-          content: '';
-          width: 100%;
-          height: 100%;
-          background: $red-dark;
-          position: absolute;
-          top: 0;
-          right: 50rem;
-          z-index: -1;
-        }
-        &:after {
-          content: '';
-          width: 100%;
-          height: 100%;
-          background: $red-dark;
-          position: absolute;
-          top: 0;
-          left: 50rem;
-          z-index: -1;
-        }
-        .interleaved-card__card {
-          padding: 4rem 0;
-        }
-      }
-      
-      .interleaved-card__description {
-        background-color: $red-dark;
-      }
-      .interleaved-card__title {
-        color: $white;
-      }
-      .interleaved-card__subtitle {
-        color: $white;
-      }
-      .interleaved-card__text {
-        color: $white;
-      }
-    }
-  }
-}
-.content-card {
-  &__items {
-    margin-top: 2rem;
-    @include tablet {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-    }
-    @include notebook {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  &__item {
-    margin-bottom: 3.5rem;
-  }
-  &__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__tag {
-    font-family: $primary-medium;
-    font-size: 0.725em;
-    color: $dark;
-    margin: 0.5rem 0.6rem 0.5rem 0;
-    background: #eaeaea;
-    padding: 0.45rem 0.75rem;
-    border-radius: 12px;
-  }
-  &__time {
-    font-family: $primary-medium;
-    font-size: 0.875em;
-    color: $dark;
-  }
-  &__title {
-    font-family: $primary-bold;
-    font-size: 1.5em;
-    color: $black;
-    line-height: $medium;
-    margin: 0.5rem 0;
-  }
-}
-
-/* Logos de Clientes */
-.logos {
-  &__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-top: 2rem;
-    @include tablet {
-      max-width: 720px;
-      margin: 2rem auto 0 auto;
-      gap: 1.5rem;
-    }
-  }
-  &__item {
-    max-width: 150px;
-  }
-}
-
-
-/* Quem somos */
-.content-columns__two {
-  column-count: 2;
-  max-width: 960px;
-  margin: 2rem auto 0 auto;
-  gap: 50px;
-}
-
-/* Footer */
-.footer {
-  color: $white;
-  padding: 2rem 0;
-  background-color: $black;
-  &__title--primary {
-    font-family: $primary-bold;
-    font-size: 1.125em;
-    color: currentColor;
-    margin-bottom: 1.125em;
-  }
-  &__text--primary {
-    font-family: $primary-regular;
-    font-size: 1em;
-    color: currentColor;
-  }
-  &__contact a {
-    display: inline-block;
-    margin: 0 0 0.75em 0;
-  }
-  &__social {
-    .social__items {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-      margin: 2rem 0;
-      .social__item {
-        width: 35px;
-        height: 35px;
-      }
-    }
-  }
-  &__copyright p {
-    text-align: center;
-    margin: 0 0 0.55em 0;
-    @include tablet {
-      text-align: right;
-      line-height: 148%;
-    }
-  }
-  &__copyright .terms__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: $dark;
-    font-size: 0.75rem;
-    text-decoration: underline;
-    margin: 1.5rem 0 0 0;
-    @include tablet {
-      justify-content: flex-end;
-    }
-  }
-
-  .container {
-    @include tablet {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      align-items: center;
-    }
-  }
-}
-

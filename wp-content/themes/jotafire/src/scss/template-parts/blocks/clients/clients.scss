@@ -1,0 +1,33 @@
+@import '../../../modules/modules';
+
+/* Logos de Clientes */
+.logos {
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    @include tablet {
+      max-width: 720px;
+      margin: 4rem auto 0 auto;
+      gap: 4.5rem;
+    }
+  }
+  &__item {
+    max-width: 100px;
+    @include tablet {
+      max-width: 150px;
+    }
+  }
+}
+
+/*Editor */
+
+.editor-styles-wrapper ul.logos__items {
+  max-width: 720px;
+  margin: 4rem auto 0 auto;
+  list-style: none;
+  list-style-type: none;
+}

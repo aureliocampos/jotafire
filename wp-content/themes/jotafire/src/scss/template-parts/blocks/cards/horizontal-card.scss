@@ -1,0 +1,104 @@
+@import '../../../modules/modules';
+
+
+.horizontal-card {
+  &__item {
+    margin-bottom: 80px;
+    position: relative;
+    &:after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: $lightest;
+      position: absolute;
+      bottom: -40px;
+    }
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+    @include tablet {
+      &:nth-of-type(2n) {
+        &:before {
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          padding: 32px 24px;
+          position: absolute;
+          top: -32px;
+          background: $lightest;
+          left: -24px;
+          right: 0;
+          z-index: -1;
+        }
+      }
+      &:after {
+        display: none;
+      }
+    }
+    @include notebook {
+      &:nth-of-type(2n) {
+        &:before {
+          width: 100vw;
+          left: -183px;
+        }
+      }
+    }
+    @include desktop {
+      &:nth-of-type(2n) {
+        &:before {
+          width: auto;
+          left: -64px;
+        }
+      }
+    }
+  }
+  &__article {
+    @include tablet {
+      display: flex;
+      justify-content: flex-start;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+  }
+  &__description {
+    @include tablet {
+      width: 50%;
+    }
+  }
+  &__title {
+    font-family: 'Roboto-Bold';
+    font-size: 24px;
+    margin: 14px 0 8px 0;
+  }
+  &__subtitle {
+    font-family: 'Roboto-Light';
+    color: $light;
+  }
+  &__text {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    line-height: 148%;
+    margin: 8px 0 16px 0;
+  }
+  &__figure {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include tablet {
+      width: 45%;
+      height: 268px;
+    }
+    @include notebook {
+      height: 360px;
+    }
+  }
+}

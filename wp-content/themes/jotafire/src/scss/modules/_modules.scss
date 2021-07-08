@@ -1,5 +1,49 @@
-
 @import './medias';
 @import './mixins';
 @import './colors';
 @import './typography';
+@import './buttons';
+
+* {
+  box-sizing: border-box;
+}
+
+#wpadminbar {
+  display: none !important;
+  margin: 0 !important;
+}
+
+.container {
+  padding: 0 1.5rem;
+  @include notebook {
+    max-width: 1114px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.section {
+  margin-top: 6em;
+  margin-bottom: 6em;
+  @include notebook {
+    margin-top: 8em;
+    margin-bottom: 8em;
+  }
+  &__cta {
+    display: flex;
+    justify-content: center;
+  }
+}
+.embed-responsive {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}

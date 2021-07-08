@@ -1,0 +1,14 @@
+@import '../../../modules/modules';
+
+/* Quem somos */
+.content-columns__two {
+  max-width: 960px;
+  margin: 2rem auto 0 auto;
+  gap: 50px;
+  @include tablet {
+    column-count: 2;
+  }
+  .section__text--primary {
+    margin-top: 1em;   
+  }
+}

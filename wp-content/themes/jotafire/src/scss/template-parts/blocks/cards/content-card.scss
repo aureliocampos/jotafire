@@ -1,0 +1,44 @@
+@import '../../../modules/modules';
+
+.content-card {
+  &__items {
+    margin-top: 2rem;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @include notebook {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__item {
+    margin-bottom: 3.5rem;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tag {
+    font-family: $primary-medium;
+    font-size: 0.725em;
+    color: $dark;
+    margin: 0.5rem 0.6rem 0.5rem 0;
+    background: #eaeaea;
+    padding: 0.45rem 0.75rem;
+    border-radius: 12px;
+  }
+  &__time {
+    font-family: $primary-medium;
+    font-size: 0.875em;
+    color: $dark;
+  }
+  &__title {
+    font-family: $primary-bold;
+    font-size: 1.5em;
+    color: $black;
+    line-height: $medium;
+    margin: 0.5rem 0;
+  }
+}
