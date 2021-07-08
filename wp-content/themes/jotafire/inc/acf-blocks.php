@@ -76,7 +76,7 @@ function acf_init_block_types() {
     // Seção de cards (Estudos de caso)
     acf_register_block_type(array(
       'name'              => 'content-card',
-      'title'             => __('Content Cards Intercalados'),
+      'title'             => __('Cards de Conteúdo Estudos de Caso'),
       'description'       => __(''),
       'render_template'   => 'template-parts/blocks/cards/content-card.php',
       'category'          => 'jotafire-blocks',
@@ -84,6 +84,19 @@ function acf_init_block_types() {
       'align'             => 'full',
       'keywords'          => array( 'Cards' ),
       'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/blocks/cards/content-card.css',
+    ));
+
+     // Seção de clientes 
+     acf_register_block_type(array(
+      'name'              => 'clients-parceiros',
+      'title'             => __('Clientes e Parceiros'),
+      'description'       => __(''),
+      'render_template'   => 'template-parts/blocks/clients/clients.php',
+      'category'          => 'jotafire-blocks',
+      'icon'              => 'admin-comments',
+      'align'             => 'full',
+      'keywords'          => array( 'Cards' ),
+      'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/blocks/clients/clients.css',
     ));
   }
 }

@@ -1,6 +1,6 @@
 <section class="section content-card__section">
   <div class="container">
-    <h2 class="section__title--secondary">Estudos de Caso</h2>
+    <h2 class="section__title--secondary"><?php the_field('title_section'); ?></h2>
 
     <ul class="content-card__items">
       <li class="content-card__item">
@@ -21,7 +21,15 @@
     </ul>
 
     <div class="section__cta">
-      <a href="" class="button__primary">IR PARA ESTUDOS DE CASO</a>
+      <?php 
+        $link = get_field('cta_section');
+        if( $link ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+            <a class="button__primary" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+        <?php endif; ?>
     </div>
   </div>
 </section>
