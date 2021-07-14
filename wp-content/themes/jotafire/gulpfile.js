@@ -18,8 +18,8 @@ var paths_style = {
 
 var paths_script = {
     scripts: {
-        src: "assets/js/**/*.js",
-        dest: "build/src/js"
+        src: "src/scss/**/*.js",
+        dest: "dist"
     }
 };
 

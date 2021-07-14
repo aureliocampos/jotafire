@@ -126,8 +126,8 @@ function acf_init_block_types() {
       'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/blocks/cards/projects-card.css',
     ));
 
-     // Seção de clientes 
-     acf_register_block_type(array(
+    // Seção de clientes 
+    acf_register_block_type(array(
       'name'              => 'clients-parceiros',
       'title'             => __('Clientes e Parceiros'),
       'description'       => __(''),
@@ -138,5 +138,18 @@ function acf_init_block_types() {
       'keywords'          => array( 'Cards' ),
       'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/blocks/clients/clients.css',
     ));
+
+    // Seção de página Estudos de caso
+    acf_register_block_type(array(
+    'name'              => 'case-studies-page',
+    'title'             => __('Seção de loop padrão página de Estudos de Caso'),
+    'description'       => __(''),
+    'render_template'   => 'template-parts/pages/case-studies/case-studies.php',
+    'category'          => 'jotafire-blocks',
+    'icon'              => 'admin-comments',
+    'align'             => 'full',
+    'keywords'          => array( 'Cards' ),
+    'enqueue_style'     => get_template_directory_uri() . '/dist/template-parts/pages/case-studies/case-studies.css',
+  ));
   }
 }

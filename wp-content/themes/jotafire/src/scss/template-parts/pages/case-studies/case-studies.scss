@@ -1,0 +1,81 @@
+@import '../../../modules/modules';
+
+.section-default-case-studies {
+  .grid--posts {
+    .img-responsive.responsive--full.wp-post-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.content-card {
+  &__items {
+    margin-top: 2rem;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @include notebook {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__item {
+    display: none;
+    margin-bottom: 3.5rem;
+  }
+  &__item.active {
+    display: block;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tag {
+    font-family: $primary-medium;
+    font-size: 0.725em;
+    color: $dark;
+    margin: 0.5rem 0.6rem 0.5rem 0;
+    background: #eaeaea;
+    padding: 0.45rem 0.75rem;
+    border-radius: 12px;
+  }
+  &__time {
+    font-family: $primary-medium;
+    font-size: 0.875em;
+    color: $dark;
+  }
+  &__title {
+    font-family: $primary-bold;
+    font-size: 1.25em;
+    color: $black;
+    text-transform: uppercase;
+    line-height: $medium;
+    margin: 0.5rem 0;
+  }
+  &__excerpt {
+    font-family: $primary-regular;
+    font-size: 0.875em;
+    color: $dark;
+    line-height: 148%;
+  }
+}
+
+.section__cases {
+  button {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Roboto-Medium';
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    background: $red-dark;
+    border: none;
+    border-radius: 50px;
+    color: $white;
+    cursor: pointer;
+  }
+}

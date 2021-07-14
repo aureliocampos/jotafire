@@ -50,8 +50,8 @@
     @include desktop {
       &:nth-of-type(2n) {
         &:before {
-          width: auto;
-          left: -64px;
+          left: -460px;
+          right: 0;
         }
       }
     }
